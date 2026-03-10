@@ -412,7 +412,7 @@ const CONTACTS = [
   { name: 'Erin',      num: '(732) 734-1764', phone: '7327341764' },
 ];
 
-function todayISO() { return new Date().toISOString().split('T')[0]; }
+function todayISO() { return new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' }); }
 
 function fmtHeaderDate() {
   return new Date().toLocaleDateString('en-US', {
